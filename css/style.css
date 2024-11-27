@@ -1,0 +1,109 @@
+/*Font faces*/
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+/* Variables */
+:root {
+    /* Primary */
+    --green: hsl(75, 94%, 57%);
+
+    /* Neutral */
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+/**** Globals ****/
+body {
+    background-color: var(--off-black);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    margin: 0;
+}
+
+/**** Utilities ****/
+
+
+/**** Layout ****/
+.card {
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+/**** Profile Picture ****/
+.container-profile-picture {
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.container-profile-picture img {
+    border-radius: 100%;
+    width: 40%;
+}
+
+
+/**** Presentation ****/
+.container-presentation {
+    text-align: center;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--white);
+    padding-bottom: .5rem;
+}
+
+.city {
+    font-size: .7rem;
+    font-weight: bold;
+    color: var(--green);
+    padding-bottom: 1.2rem;
+}
+
+.presentation {
+    font-size: .7rem;
+    color: var(--white);
+    padding-bottom: 1.8rem;
+}
+
+
+/**** Social Networks ****/
+.container-social-network {
+    display: block;
+    text-align: center;
+}
+
+.btn-social-network {
+    background-color: var(--grey);
+    padding: .8rem 4rem;
+    border-radius: .5rem;
+    font-size: .8rem;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.btn-social-network:hover {
+    background-color: var(--green);
+    cursor: pointer;
+    color: var(--off-black);
+    transition: ease-in-out .3s;
+}
+
+.btn-social-network:not(:last-child) {
+    margin-bottom: 1rem;
+}
